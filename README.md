@@ -1,6 +1,6 @@
 # n8n On-Premises Automation Hub
 
-> "The future of automation isn't just about efficiency; it's about who owns the logic. Fair-code is our commitment to a sustainable, transparent ecosystem."
+> "The future of automation isn't just about efficiency; it's about who owns the logic. Fair-code is our commitment to a sustainable, transparent ecosystem." <br>
 > — Jan Oberhauser, Founder of n8n
 
 ---
