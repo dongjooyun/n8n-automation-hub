@@ -3,12 +3,12 @@ services:
     image: n8nio/n8n:latest
     restart: always
     ports:
-      - "1616:5678"  # 서버의 1616 포트를 도커 내부 5678과 연결합니다.
+      - "1616:5678"
     volumes:
       - ./n8n_data:/home/node/.n8n
     environment:
-      - N8N_HOST=djyun-n8n.sj-onpremise-cloudflare-tunnel.cloud
+      - N8N_HOST=djyun-n8n.zeroone.it.kr
       - N8N_PORT=5678
       - N8N_PROTOCOL=https
       - NODE_ENV=production
-      - WEBHOOK_URL=https://djyun-n8n.sj-onpremise-cloudflare-tunnel.cloud/
+      - WEBHOOK_URL=https://djyun-n8n.zeroone.it.kr/
