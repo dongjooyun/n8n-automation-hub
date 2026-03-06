@@ -1,14 +1,17 @@
 services:
   n8n:
+    user: "1000:1000"
     image: n8nio/n8n:latest
     restart: always
     ports:
       - "1616:5678"
     volumes:
       - ./n8n_data:/home/node/.n8n
+      - ./output:/home/node/output
     environment:
       - N8N_HOST=djyun-n8n.zeroone.it.kr
       - N8N_PORT=5678
       - N8N_PROTOCOL=https
       - NODE_ENV=production
       - WEBHOOK_URL=https://djyun-n8n.zeroone.it.kr/
+      - NODE_FUNCTION_ALLOW_BUILTIN=fs
